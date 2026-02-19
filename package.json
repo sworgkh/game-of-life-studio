@@ -41,10 +41,13 @@
     "@vitest/coverage-v8": "^4.0.18",
     "concurrently": "^8.2.2",
     "happy-dom": "^20.4.0",
-    "nodemon": "^3.0.2",
+    "nodemon": "^3.1.11",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
     "vite": "^6.4.1",
     "vitest": "^4.0.18"
+  },
+  "overrides": {
+    "minimatch": ">=10.2.1"
   }
 }
