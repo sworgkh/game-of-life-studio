@@ -49,7 +49,7 @@ jspm_packages/
 # Yarn
 .yarn-integrity
 .yarn/
-yarn.lock
+.pnp.*
 
 # Environment variables
 .env
