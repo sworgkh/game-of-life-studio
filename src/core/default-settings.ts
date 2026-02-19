@@ -21,7 +21,7 @@ export const DEFAULT_VISUAL_SETTINGS = {
 };
 
 export const DEFAULT_AUTO_STOP = {
-  enabled: false,
+  enabled: true,
   delaySetting: 5,
   showNotification: true,
 };
@@ -60,6 +60,6 @@ export function getDefaultSettings(): SettingsSnapshot {
     randomDensity: DEFAULT_SIMULATION.randomDensity,
     sliderMaxes: { ...DEFAULT_SLIDER_MAXES },
     sidebarCollapsed: false,
-    activeTab: 'tab-tools',
+    activeTab: 'tab-settings',
   };
 }

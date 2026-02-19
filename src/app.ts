@@ -399,8 +399,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Global reference for recording list inline handlers
   (window as any).game = app;
 
-  // Demo glider if no saved settings
+  // Random fill if no saved settings so users can immediately hit play
   if (!localStorage.getItem('gameoflife-settings')) {
-    setTimeout(() => app.placeDemoGlider(), 100);
+    setTimeout(() => app.sim.randomize(), 100);
   }
 });
