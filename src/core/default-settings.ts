@@ -60,6 +60,6 @@ export function getDefaultSettings(): SettingsSnapshot {
     randomDensity: DEFAULT_SIMULATION.randomDensity,
     sliderMaxes: { ...DEFAULT_SLIDER_MAXES },
     sidebarCollapsed: false,
-    activeTab: 'tab-settings',
+    activeTab: 'controls',
   };
 }

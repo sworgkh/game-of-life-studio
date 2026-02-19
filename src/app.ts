@@ -379,6 +379,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Lucide icons
   createIcons({ icons });
 
+  const isFirstVisit = !localStorage.getItem('gameoflife-settings');
+
   const app = new App('gameCanvas');
   app.initialize();
 
@@ -400,7 +402,7 @@ document.addEventListener('DOMContentLoaded', () => {
   (window as any).game = app;
 
   // Random fill if no saved settings so users can immediately hit play
-  if (!localStorage.getItem('gameoflife-settings')) {
-    setTimeout(() => app.sim.randomize(), 100);
+  if (isFirstVisit) {
+    app.sim.randomize();
   }
 });

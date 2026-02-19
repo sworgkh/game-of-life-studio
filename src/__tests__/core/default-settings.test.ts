@@ -89,7 +89,7 @@ describe('default-settings', () => {
       expect(settings.randomDensity).toBe(DEFAULT_SIMULATION.randomDensity);
       expect(settings.sliderMaxes).toEqual(DEFAULT_SLIDER_MAXES);
       expect(settings.sidebarCollapsed).toBe(false);
-      expect(settings.activeTab).toBe('tab-tools');
+      expect(settings.activeTab).toBe('controls');
     });
 
     it('returns fresh copies each call', () => {
